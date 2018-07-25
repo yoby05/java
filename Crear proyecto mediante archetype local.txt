@@ -1,0 +1,5 @@
+Crear proyecto mediante archetype local
+
+1- Instalar Archetype Local. Ir a Raiz del proyecto y ejecutar comando: maven mvn install
+2- Crear una nueva carpeta y ejecutar el comando: mvn archetype:generate -DarchetypeCatalog=local
+3- Escribir el número que corresponda con nuestro archetype local y completar la información mostrada.
