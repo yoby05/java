@@ -1,0 +1,79 @@
+http://maven.petalslink.com/repo/MITyCLibAPI/MITyCLibAPI/1.1.7/
+
+http://maven.petalslink.com/repo/MITyCLibCert/MITyCLibCert/1.1.7/
+
+http://maven.petalslink.com/repo/MITyCLibCrypt/MITyCLibCrypt/1.1.7/
+
+http://maven.petalslink.com/repo/MITyCLibOCSP/MITyCLibOCSP/1.1.7/
+
+http://maven.petalslink.com/repo/MITyCLibPolicy/MITyCLibPolicy/1.1.7/
+
+http://maven.petalslink.com/repo/MITyCLibTrust/MITyCLibTrust/1.1.7/
+
+http://maven.petalslink.com/repo/MITyCLibTSA/MITyCLibTSA/1.1.7/
+
+http://maven.petalslink.com/repo/MITyCLibXADES/MITyCLibXADES/1.1.7/
+
+
+mvn install:install-file "-DgroupId=MITyCLibAPI" "-DartifactId=MITyCLibAPI" "-Dversion=1.1.7" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\MITyCLibAPI-1.1.7.jar"
+mvn install:install-file "-DgroupId=MITyCLibCert" "-DartifactId=MITyCLibCert" "-Dversion=1.1.7" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\MITyCLibCert-1.1.7.jar"
+mvn install:install-file "-DgroupId=MITyCLibXADES" "-DartifactId=MITyCLibXADES" "-Dversion=1.1.7" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\MITyCLibXADES-1.1.7.jar"
+mvn install:install-file "-DgroupId=MITyCLibTSA" "-DartifactId=MITyCLibTSA" "-Dversion=1.1.7" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\MITyCLibTSA-1.1.7.jar"
+mvn install:install-file "-DgroupId=MITyCLibTrust" "-DartifactId=MITyCLibTrust" "-Dversion=1.1.7" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\MITyCLibTrust-1.1.7.jar"
+mvn install:install-file "-DgroupId=MITyCLibPolicy" "-DartifactId=MITyCLibPolicy" "-Dversion=1.1.7" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\MITyCLibPolicy-1.1.7.jar"
+mvn install:install-file "-DgroupId=MITyCLibOCSP" "-DartifactId=MITyCLibOCSP" "-Dversion=1.1.7" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\MITyCLibOCSP-1.1.7.jar"
+mvn install:install-file "-DgroupId=MITyCLibCrypt" "-DartifactId=MITyCLibCrypt" "-Dversion=1.1.7" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\MITyCLibCrypt-1.1.7.jar"
+
+mvn install:install-file "-DgroupId=xml-apis" "-DartifactId=xml-apis" "-Dversion=1.3.04" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\xml-apis-1.3.04.jar"
+mvn install:install-file "-DgroupId=xmlsec" "-DartifactId=xmlsec" "-Dversion=1.4.2-ADSI" "-Dpackaging=jar" "-Dfile=C:\Users\yoby-pc\Desktop\facturacion gen\xmlsec-1.4.2-ADSI-1.1.jar"
+
+<!-- Inicio Certificados Digitales -->
+		<dependency>
+			<groupId>MITyCLibAPI</groupId>
+			<artifactId>MITyCLibAPI</artifactId>
+			<version>1.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/jar/MITyCLibAPI-1.1.7.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>MITyCLibCert</groupId>
+			<artifactId>MITyCLibCert</artifactId>
+			<version>1.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/jar/MITyCLibCert-1.1.7.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>MITyCLibCrypt</groupId>
+			<artifactId>MITyCLibCrypt</artifactId>
+			<version>1.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/jar/MITyCLibCrypt-1.1.7.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>MITyCLibOCSP</groupId>
+			<artifactId>MITyCLibOCSP</artifactId>
+			<version>1.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/jar/MITyCLibOCSP-1.1.7.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>MITyCLibPolicy</groupId>
+			<artifactId>MITyCLibPolicy</artifactId>
+			<version>1.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/jar/MITyCLibPolicy-1.1.7.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>MITyCLibTrust</groupId>
+			<artifactId>MITyCLibTrust</artifactId>
+			<version>1.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/jar/MITyCLibTrust-1.1.7.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>MITyCLibXADES</groupId>
+			<artifactId>MITyCLibXADES</artifactId>
+			<version>1.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/jar/MITyCLibXADES-1.1.7.jar</systemPath>
+		</dependency>
