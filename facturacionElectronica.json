@@ -1,0 +1,73 @@
+{
+    "infoTributaria": {
+      "tipoEmision": "1",
+      "razonSocial": "PROAÑO DIAZ IVAN PATRICIO",
+      "nombreComercial": "IVAN PROAÑO",
+      "ruc": "1716779937001",
+      "estab": "001",
+      "ptoEmi": "100",
+      "dirMatriz": "DE LOS FRESNOS Y NIELSEN"
+    },
+    "infoFactura": {
+      "fechaEmision": "06/01/2019",
+      "dirEstablecimiento": "DE LOS FRESNOS Y NIELSEN",
+      "obligadoContabilidad": "NO",
+      "tipoIdentificacionComprador": "05",
+      "razonSocialComprador": "HERNANDEZ MENDEZ YOAN",
+      "identificacionComprador": "0959543463",
+      "totalSinImpuestos": "35.00",
+      "totalDescuento": "0.00",
+      "totalConImpuestos": {
+        "totalImpuesto": [
+          {
+            "codigo": "2",
+            "codigoPorcentaje": "2",
+            "baseImponible": "35.00",
+            "valor": "4.20"
+          }
+        ]
+      },
+      "propina": "0.00",
+      "importeTotal": "39.20",
+      "moneda": "DOLAR",
+      "pagos": {
+        "pago": [{
+          "formaPago": "01",
+          "total": "39.20"
+        }]
+      }
+    },
+    "detalles": {
+      "detalle": {
+        "codigoPrincipal": "001",
+        "descripcion": "SERVICIOS DESARROLLO SOFTWARE HORA",
+        "cantidad": "1",
+        "precioUnitario": "35",
+        "descuento": "0.00",
+        "precioTotalSinImpuesto": "35.00",
+        "impuestos": {
+          "impuesto": [
+            {
+              "codigo": "2",
+              "codigoPorcentaje": "2",
+              "tarifa": "12",
+              "baseImponible": "35.00",
+              "valor": "4.20"
+            }
+          ]
+        }
+      }
+    },
+    "infoAdicional": {
+      "campoAdicional": [
+        {
+          "nombre": "Direccion",
+          "value": "Punaes Y Miller"
+        },
+        {
+          "nombre": "Email",
+          "value": "yoanhmz@gmail.com"
+        }
+      ]
+    }
+}

@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "bde8ee7f-b37c-48d2-8d6b-8eacefa55e3e",
+		"name": "Facturacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "encriptarPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"clave\":\"Muscaria1234\"\n}\t\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ws-facturacion/encriptarPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ws-facturacion",
+						"encriptarPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearFacturaElectronica",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"infoTributaria\": {\r\n      \"tipoEmision\": \"1\",\r\n      \"razonSocial\": \"PROAÑO DIAZ IVAN PATRICIO\",\r\n      \"nombreComercial\": \"IVAN PROAÑO\",\r\n      \"ruc\": \"1716779937001\",\r\n      \"estab\": \"001\",\r\n      \"ptoEmi\": \"100\",\r\n      \"dirMatriz\": \"DE LOS FRESNOS Y NIELSEN\"\r\n    },\r\n    \"infoFactura\": {\r\n      \"fechaEmision\": \"06/01/2019\",\r\n      \"dirEstablecimiento\": \"DE LOS FRESNOS Y NIELSEN\",\r\n      \"obligadoContabilidad\": \"NO\",\r\n      \"tipoIdentificacionComprador\": \"05\",\r\n      \"razonSocialComprador\": \"HERNANDEZ MENDEZ YOAN\",\r\n      \"identificacionComprador\": \"0959543463\",\r\n      \"totalSinImpuestos\": \"35.00\",\r\n      \"totalDescuento\": \"0.00\",\r\n      \"totalConImpuestos\": {\r\n        \"totalImpuesto\": [\r\n          {\r\n            \"codigo\": \"2\",\r\n            \"codigoPorcentaje\": \"2\",\r\n            \"baseImponible\": \"35.00\",\r\n            \"valor\": \"4.20\"\r\n          }\r\n        ]\r\n      },\r\n      \"propina\": \"0.00\",\r\n      \"importeTotal\": \"39.20\",\r\n      \"moneda\": \"DOLAR\",\r\n      \"pagos\": {\r\n        \"pago\": [{\r\n          \"formaPago\": \"01\",\r\n          \"total\": \"39.20\"\r\n        }]\r\n      }\r\n    },\r\n    \"detalles\": {\r\n      \"detalle\": {\r\n        \"codigoPrincipal\": \"001\",\r\n        \"descripcion\": \"SERVICIOS DESARROLLO SOFTWARE HORA\",\r\n        \"cantidad\": \"1\",\r\n        \"precioUnitario\": \"35\",\r\n        \"descuento\": \"0.00\",\r\n        \"precioTotalSinImpuesto\": \"35.00\",\r\n        \"impuestos\": {\r\n          \"impuesto\": [\r\n            {\r\n              \"codigo\": \"2\",\r\n              \"codigoPorcentaje\": \"2\",\r\n              \"tarifa\": \"12\",\r\n              \"baseImponible\": \"35.00\",\r\n              \"valor\": \"4.20\"\r\n            }\r\n          ]\r\n        }\r\n      }\r\n    },\r\n    \"infoAdicional\": {\r\n      \"campoAdicional\": [\r\n        {\r\n          \"nombre\": \"Direccion\",\r\n          \"value\": \"Punaes Y Miller\"\r\n        },\r\n        {\r\n          \"nombre\": \"Email\",\r\n          \"value\": \"yoanhmz@gmail.com\"\r\n        }\r\n      ]\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ws-facturacion/crearFacturaElectronica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ws-facturacion",
+						"crearFacturaElectronica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "descargarDocumentoElectronico",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"claveAcceso\":\"0601201901171677993700110011000000003163494907112\"\n}\t\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ws-facturacion/descargarDocumentoElectronico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ws-facturacion",
+						"descargarDocumentoElectronico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarFacturaElectronica",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"infoTributaria\": {\r\n      \"tipoEmision\": \"1\",\r\n      \"razonSocial\": \"PROAÑO DIAZ IVAN PATRICIO\",\r\n      \"nombreComercial\": \"IVAN PROAÑO\",\r\n      \"ruc\": \"1716779937001\",\r\n      \"estab\": \"001\",\r\n      \"ptoEmi\": \"100\",\r\n      \"claveAcceso\": \"0601201901171677993700110011000000003124877590710\",\r\n      \"dirMatriz\": \"DE LOS FRESNOS Y NIELSEN\"\r\n    },\r\n    \"infoFactura\": {\r\n      \"fechaEmision\": \"06/01/2019\",\r\n      \"dirEstablecimiento\": \"DE LOS FRESNOS Y NIELSEN\",\r\n      \"obligadoContabilidad\": \"NO\",\r\n      \"tipoIdentificacionComprador\": \"05\",\r\n      \"razonSocialComprador\": \"HERNANDEZ MENDEZ YOAN\",\r\n      \"identificacionComprador\": \"0959543463\",\r\n      \"totalSinImpuestos\": \"35.00\",\r\n      \"totalDescuento\": \"0.00\",\r\n      \"totalConImpuestos\": {\r\n        \"totalImpuesto\": [\r\n          {\r\n            \"codigo\": \"2\",\r\n            \"codigoPorcentaje\": \"2\",\r\n            \"baseImponible\": \"35.00\",\r\n            \"valor\": \"4.20\"\r\n          }\r\n        ]\r\n      },\r\n      \"propina\": \"0.00\",\r\n      \"importeTotal\": \"39.20\",\r\n      \"moneda\": \"DOLAR\",\r\n      \"pagos\": {\r\n        \"pago\": [{\r\n          \"formaPago\": \"01\",\r\n          \"total\": \"39.20\"\r\n        }]\r\n      }\r\n    },\r\n    \"detalles\": {\r\n      \"detalle\": {\r\n        \"codigoPrincipal\": \"001\",\r\n        \"descripcion\": \"SERVICIOS DESARROLLO SOFTWARE HORA\",\r\n        \"cantidad\": \"1\",\r\n        \"precioUnitario\": \"35\",\r\n        \"descuento\": \"0.00\",\r\n        \"precioTotalSinImpuesto\": \"35.00\",\r\n        \"impuestos\": {\r\n          \"impuesto\": [\r\n            {\r\n              \"codigo\": \"2\",\r\n              \"codigoPorcentaje\": \"2\",\r\n              \"tarifa\": \"12\",\r\n              \"baseImponible\": \"35.00\",\r\n              \"valor\": \"4.20\"\r\n            }\r\n          ]\r\n        }\r\n      }\r\n    },\r\n    \"infoAdicional\": {\r\n      \"campoAdicional\": [\r\n        {\r\n          \"nombre\": \"Direccion\",\r\n          \"value\": \"Punaes Y Miller\"\r\n        },\r\n        {\r\n          \"nombre\": \"Email\",\r\n          \"value\": \"yoanhmz@gmail.com\"\r\n        }\r\n      ]\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ws-facturacion/editarFacturaElectronica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ws-facturacion",
+						"editarFacturaElectronica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearComprobanteRecepcion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"infoTributaria\": {\n    \"tipoEmision\": \"1\",\n    \"razonSocial\": \"PROAÑO DIAZ IVAN PATRICIO\",\n    \"nombreComercial\": \"IVAN PROAÑO\",\n    \"ruc\": \"1716779937001\",\n    \"estab\": \"001\",\n    \"ptoEmi\": \"100\",\n    \"dirMatriz\": \"DE LOS FRESNOS Y NIELSEN\"\n  },\n  \"infoCompRetencion\": {\n    \"fechaEmision\": \"13/01/2019\",\n    \"dirEstablecimiento\": \"DE LOS FRESNOS Y NIELSEN\",\n    \"obligadoContabilidad\": \"NO\",\n    \"tipoIdentificacionSujetoRetenido\": \"04\",\n    \"razonSocialSujetoRetenido\": \"YOAN HERNANDEZ MENDEZ\",\n    \"identificacionSujetoRetenido\": \"0959543463001\",\n    \"periodoFiscal\": \"01/2019\"\n  },\n  \"impuestos\": {\n    \"impuesto\": [\n      {\n        \"codigo\": \"1\",\n        \"codigoRetencion\": \"303\",\n        \"baseImponible\": \"100\",\n        \"porcentajeRetener\": \"10.0\",\n        \"valorRetenido\": \"10.00\",\n        \"codDocSustento\": \"01\",\n        \"numDocSustento\": \"001100123456789\",\n        \"fechaEmisionDocSustento\": \"03/01/2019\"\n      }\n    ]\n  },\n  \"infoAdicional\": {\n      \"campoAdicional\": [\n        {\n          \"nombre\": \"Direccion\",\n          \"value\": \"Punaes Y Miller\"\n        },\n        {\n          \"nombre\": \"Email\",\n          \"value\": \"yoanhmz@gmail.com\"\n        }\n      ]\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/ws-facturacion/crearComprobanteRecepcion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ws-facturacion",
+						"crearComprobanteRecepcion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
