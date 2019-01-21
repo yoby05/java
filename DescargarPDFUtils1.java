@@ -1,7 +1,4 @@
-/*
- * Equifax Ecuador C.A. Sistema: Fast Decision Creado: 28 dic. 2018 Los contenidos de este archivo son propiedad intelectual de
- * Equifax Ecuador C.A. Copyright 2008-2018 Equifax Ecuador C.A. Todos los derechos reservados.
- */
+
 package ec.com.equifax.fastDecision.commons.util;
 
 import java.io.BufferedInputStream;
@@ -22,10 +19,6 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-/**
- * @author yxh24
- * @version $Revision: $
- */
 public final class DescargarArchivoUtils {
     /**
      * Tamanno del Buffer
