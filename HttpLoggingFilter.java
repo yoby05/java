@@ -15,11 +15,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 
-/**
- * Filtro para la gestion de logs de auditoria sobre las peticiones al rest
- * @author Equifax Ecuador C.A.
- * @version $Revision: $
- */
 @Configuration
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class HttpLoggingFilter implements Filter {
